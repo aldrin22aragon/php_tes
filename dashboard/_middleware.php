@@ -8,7 +8,8 @@ function mustLoggedIn()
     }
 }
 function validRoles(array $roles)
-{
+{ 
+    // asfdsa
     $user = $_SESSION['user'] ;
     
 }
