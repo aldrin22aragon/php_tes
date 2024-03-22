@@ -5,11 +5,11 @@ include "___connection.php";
 
 class UserModel
 {
-    public int $id;
-    public string $username;
-    public string $password;
-    public string $fname;
-    public string $lname;
+    public $id;
+    public $username;
+    public $password;
+    public $fname;
+    public $lname;
 
     static function parse(mixed $data): UserModel
     {

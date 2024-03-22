@@ -20,6 +20,7 @@ if (isset($_SESSION["user"])) {
     $msg = "";
     if (isset($_POST['login_submit'])) {
         $user =  Users::SelectByUserAndPassword($_POST['user'], $_POST['password']);
+        
         if ($user != null) {
             $_SESSION['user'] = $user;
             header("location: ./dashboard");
